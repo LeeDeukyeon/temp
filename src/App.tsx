@@ -24,9 +24,24 @@ function Counter() {
 }
 
 function App() {
-  const counterArray = [];
-  for (let i = 0; i < 1000; i++) counterArray.push(<Counter></Counter>);
-
-  return <div>{counterArray}</div>;
+  const 학교이름들 = [
+    "경기고",
+    "성수고",
+    "창동고",
+    "숭신여고",
+    "양명여고",
+    "성신고",
+  ];
+  return (
+    <div>
+      {학교이름들.map((학교이름) => (
+        <div>
+          <h1>{학교이름}</h1>
+          <Counter />
+        </div>
+      ))}
+    </div>
+  );
 }
+
 export default App;
