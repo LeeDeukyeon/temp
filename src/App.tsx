@@ -4,6 +4,11 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
-  return <div></div>;
+  return (
+    <div>
+      <h1>0</h1>
+      <button>증가</button>
+    </div>
+  );
 }
 export default App;
