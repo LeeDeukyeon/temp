@@ -3,7 +3,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { useState } from "react";
 
-function App() {
+function Counter() {
   const 리턴값 = useState(0);
   const count = 리턴값[0];
   const setCount = 리턴값[1];
@@ -21,5 +21,12 @@ function App() {
       {초기화버튼}
     </div>
   );
+}
+
+function App() {
+  const counterArray = [];
+  for (let i = 0; i < 1000; i++) counterArray.push(<Counter></Counter>);
+
+  return <div>{counterArray}</div>;
 }
 export default App;
