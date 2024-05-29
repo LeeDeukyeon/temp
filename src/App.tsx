@@ -13,6 +13,9 @@ function App() {
       <button onClick={() => setCount((현재count) => 현재count + 1)}>
         증가
       </button>
+      <button onClick={() => setCount((현재count) => 현재count - 1)}>
+        감소
+      </button>
     </div>
   );
 }
